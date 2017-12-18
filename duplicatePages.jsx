@@ -10,7 +10,6 @@ var myDialog = app.dialogs.add({name:"Duplicar páginas"});
 
 
 with(myDialog.dialogColumns.add()){
-    staticTexts.add({staticLabel:"Hay que pensar que la primera página ha de recolocarse a mano."});
         with(dialogRows.add()) {
             staticTexts.add({staticLabel:"Duplicar página seleccionada # " + myPage.name});
             var myIntBox = integerEditboxes.add({editValue:1, smallNudge:1, largeNudge:10});
