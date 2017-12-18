@@ -30,7 +30,6 @@ if(myResult == true){
         exit();
     }
     
-    var page = myDoc.pages.itemByID(myPageId); //Página inicial del script
     var inv = inverted.checkedState; // Aquí hay que leer el checkbox
     //alert(inverted.checkedState);
     
