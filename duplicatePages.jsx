@@ -31,16 +31,17 @@ if(myResult == true){
         exit();
     }
     
+    var page = myDoc.pages.itemByID(myPageId); //Página inicial del script
     var inv = inverted.checkedState; // Aquí hay que leer el checkbox
     //alert(inverted.checkedState);
     
     if (inv == true) {
          for (i = 0; i < myNumber; i++) {
-         myPage.duplicate(LocationOptions.AFTER, myDoc.pages.itemByID(myPageId));
+         myPage = myPage.duplicate(LocationOptions.BEFORE, myPage);
         }
     } else  {
         for (i = 0; i < myNumber; i++) {
-        myPage.duplicate(LocationOptions.BEFORE, myDoc.pages.itemByID(myPageId));
+        myPage = myPage.duplicate(LocationOptions.AFTER, myPage);
         }  
     }
 }
